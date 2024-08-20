@@ -13,27 +13,27 @@ The dataset used is heavily imbalanced, and techniques like SMOTE and class weig
 
 ## Dataset
 The dataset contains the following features:<br>
-Numerical: Various financial and demographic data.<br>
-Categorical: Information such as profession, gender, and city.<br>
+**Numerical:** Various financial and demographic data.<br>
+**Categorical:** Information such as profession, gender, and city.<br>
 The target variable is Risk_Flag, indicating whether an applicant is at risk of loan default.
 
 ## Preprocessing
-Feature Scaling: Numerical features are scaled using StandardScaler.<br>
-Encoding: Categorical features are one-hot encoded.<br>
-Dimensionality Reduction: Truncated SVD is applied to reduce the dimensionality of the data.<br>
-Handling Imbalance: SMOTE is used to oversample the minority class.<br>
+**Feature Scaling:** Numerical features are scaled using StandardScaler.<br>
+**Encoding:** Categorical features are one-hot encoded.<br>
+**Dimensionality Reduction:** Truncated SVD is applied to reduce the dimensionality of the data.<br>
+**Handling Imbalance:** SMOTE is used to oversample the minority class.<br>
 
 ## Modeling
 Several models are trained and evaluated:<br>
-XGBoost, RandomForestClassifier, and CatBoost: Trained with and without SMOTE.<br>
-BalancedRandomForestClassifier and RUSBoostClassifier: Specifically designed for handling imbalanced data.<br>
-Stacking Classifier: Combines the predictions of XGBoost, RandomForest, and CatBoost for a final prediction.<br>
+**XGBoost, RandomForestClassifier, and CatBoost:** Trained with and without SMOTE.<br>
+**BalancedRandomForestClassifier and RUSBoostClassifier:** Specifically designed for handling imbalanced data.<br>
+**Stacking Classifier:** Combines the predictions of XGBoost, RandomForest, and CatBoost for a final prediction.<br>
 
 ## Evaluation
 The models are evaluated using:<br>
-Confusion Matrix: To visualize the performance on each class.<br>
-Classification Report: Provides precision, recall, f1-score, and support for each class.<br>
-Cross-Validation Accuracy: Evaluates the model's performance across different folds of the data.
+**Confusion Matrix:** To visualize the performance of each class.<br>
+**Classification Report:** Provides precision, recall, f1-score, and support for each class.<br>
+**Cross-Validation Accuracy:** Evaluates the model's performance across different folds of the data.
 
 
 
